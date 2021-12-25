@@ -5,13 +5,12 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import styled from '@emotion/styled';
 import {logo} from '../common/icons/logo';
-import {Container, Grid, Hidden, ImageList, Paper} from '@mui/material';
+import {Container, Grid, Hidden, Paper} from '@mui/material';
 import {heroGraphics} from '../common/icons/heroGraphics';
 import {aiPick} from '../common/icons/aiPicking';
 import {deliveryBikeIcon} from '../common/icons/deliveryBikeIcon';
 import {shockedEmoji} from '../common/icons/shockedEmoji';
 import {fbIcon, instaIcon, twitterIcon, whatsappicon} from '../common/icons/socialIcons';
-import Image from 'next/image';
 
 const CustomAppBar = styled(AppBar)<AppBarProps>(({theme}) => ({
     backgroundColor: '#FFEDED',
@@ -163,7 +162,7 @@ const Home: NextPage = () => {
                                 </div>
                                 <div>
                                     <AppStoreLink>
-                                        <Image
+                                        <img
                                             src={'/googleplay.png'}
                                             width={180}
                                             height={63.28}
@@ -171,7 +170,7 @@ const Home: NextPage = () => {
                                         />
                                     </AppStoreLink>
                                     <a>
-                                        <Image
+                                        <img
                                             src={'/applestore.png'}
                                             width={180}
                                             height={63.28}
@@ -253,7 +252,7 @@ const Home: NextPage = () => {
                             spacing={4}
                         >
                             <Grid item xs={12} display={'flex'} alignItems={'center'} justifyContent={'center'}>
-                                <Image
+                                <img
                                     src={'/bbsr.png'}
                                     width={240}
                                     height={240}
@@ -287,7 +286,7 @@ const Home: NextPage = () => {
                                     }}
                                 >
                                     <div>
-                                        <Image
+                                        <img
                                             src={'/customer.png'}
                                             width={62}
                                             height={62}
@@ -312,7 +311,7 @@ const Home: NextPage = () => {
                                     }}
                                 >
                                     <div>
-                                        <Image
+                                        <img
                                             src={'/customer.png'}
                                             width={62}
                                             height={62}
@@ -342,7 +341,7 @@ const Home: NextPage = () => {
                                     }}
                                 >
                                     <div>
-                                        <Image
+                                        <img
                                             src={'/customer.png'}
                                             width={62}
                                             height={62}
@@ -367,7 +366,7 @@ const Home: NextPage = () => {
                                     }}
                                 >
                                     <div>
-                                        <Image
+                                        <img
                                             src={'/customer.png'}
                                             width={62}
                                             height={62}
