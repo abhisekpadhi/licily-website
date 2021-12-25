@@ -1,16 +1,35 @@
-html,
-body {
+
+
+/** {*/
+/*  box-sizing: border-box;*/
+/*}*/
+
+html, body, #root, #root>div, #__next {
+  height: 100%;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  max-width: 100%;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.MuiOutlinedInput-root{
+  border-radius: 6px !important;
+  height: 42px;
+  background: #ffffff;
+
 }
 
-* {
-  box-sizing: border-box;
+.MuiTextField-root label {
+  top: -4px;
+}
+
+.MuiTextField-root label[data-shrink='true'] {
+  top: 0;
+}
+
+.MuiFormControl-root label {
+  top: -6px;
+}
+
+.MuiFormControl-root label.MuiFormLabel-filled {
+  top: 0;
 }
