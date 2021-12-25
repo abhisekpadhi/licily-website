@@ -209,7 +209,7 @@ const Home: NextPage = () => {
                                     </Description>
                                 </div>
                             </Grid>
-                            <Grid item xs display={'flex'} alignItems={'center'} justifyContent={'flex-end'}>
+                            <Grid item xs display={'flex'} alignItems={'center'} justifyContent={'center'}>
                                 {aiPick()}
                             </Grid>
                         </Grid>
