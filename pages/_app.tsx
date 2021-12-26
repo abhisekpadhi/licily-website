@@ -7,6 +7,7 @@ import { CacheProvider, EmotionCache } from '@emotion/react';
 import {theme} from '../styles/theme';
 import createEmotionCache from '../styles/emotion-cache';
 import '../styles/globals.css';
+import LicilyTemplate from '../common/components/LicilyTemplate';
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -26,7 +27,7 @@ export default function MyApp(props: MyAppProps) {
         <ThemeProvider theme={theme}>
           {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
           <CssBaseline/>
-          <Component {...pageProps} />
+          <LicilyTemplate component={<Component {...pageProps} />} />
         </ThemeProvider>
       </CacheProvider>
   );

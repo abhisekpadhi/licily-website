@@ -152,16 +152,16 @@ function shuffle(array: string[]) {
 
 function AnimatedHeroWord() {
     // after 4 seconds fadeout, 2seconds after fadeout, fadein new word
-    const [word, setWord] = useState('Grocery');
+    const [word, setWord] = useState("🛍 Grocery",);
     const [out, setOut] = useState(false);
     useEffect(() => {
         const outInterval = setInterval(() => {
             setOut(true);
         }, 4000);
         const wordInterval = setInterval(() => {
-            setOut(false);
             setWord(shuffle(herowords)[0]);
-        }, 4200);
+            setOut(false);
+        }, 5200);
         return () => {
             clearInterval(outInterval);
             clearInterval(wordInterval);
@@ -180,43 +180,6 @@ const Home: NextPage = () => {
 
     return (
         <Box>
-            <Head>
-                <title>Licily - Grocery Delivery</title>
-                <meta name="description" content="Licily delivers grocery at your doorstep in minutes" />
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-            <CustomAppBar position="static">
-                <Toolbar>
-                    <div style={{flexGrow: 1}}>
-                        <div style={{paddingTop: 10}}>
-                            {logo()}
-                        </div>
-                    </div>
-                    <TopNavRight>
-                        <a>
-                            <HiringBtn>
-                                <HiringBtnRedDot />
-                                <MenuItem
-                                    style={{
-                                        marginLeft: 0,
-                                        color: '#E63030',
-                                    }}>We are hiring</MenuItem>
-                            </HiringBtn>
-                        </a>
-
-                        <Hidden mdDown>
-                            <MenuItem>
-                                Delivery Areas
-                            </MenuItem>
-                            <MenuItem>
-                                Customer Support
-                            </MenuItem>
-                        </Hidden>
-
-                    </TopNavRight>
-                </Toolbar>
-            </CustomAppBar>
-
             <Container>
                 <ContentSection>
                     <Grid
@@ -456,76 +419,7 @@ const Home: NextPage = () => {
                 </Container>
             </div>
 
-            <div style={{backgroundColor: '#FFEDED', paddingTop: '4rem', paddingBottom: '4rem', backgroundImage: `url("/footerbg.svg")`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
-                <Container>
-                    <SectionTitle style={{color: '#0087AD', textAlign: 'left'}}>
-                        {logo()}
-                    </SectionTitle>
-                    <Grid
-                        container
-                    >
-                        <Grid item md={3} xs={6}>
-                            <div>
-                                <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 14px 0'}}>
-                                    <a style={{color: '#000'}}>Delivery areas</a>
-                                </div>
-                                <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 14px 0'}}>
-                                    <a style={{color: '#000'}}>Jobs</a>
-                                </div>
-                                <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 14px 0'}}>
-                                    <a style={{color: '#000'}}>Customer support</a>
-                                </div>
-                                <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 14px 0'}}>
-                                    <a style={{color: '#000'}}>Terms of service</a>
-                                </div>
-                                <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 14px 0'}}>
-                                    <a style={{color: '#000'}}>Privacy policy</a>
-                                </div>
 
-                            </div>
-                        </Grid>
-                        <Grid item md={3} xs={6}>
-                            <div>
-                                <a style={{color: '#000', padding: '10px 0'}}>
-                                    <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 20px 0', display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-                                        {fbIcon()} &nbsp; Facebook
-                                    </div>
-                                </a>
-                                <a style={{color: '#000'}}>
-                                    <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 20px 0', display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-                                        {instaIcon()} &nbsp; Instagram
-                                    </div>
-                                </a>
-                                <a style={{color: '#000'}}>
-                                    <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 20px 0', display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-                                        {twitterIcon()} &nbsp; Twitter
-                                    </div>
-                                </a>
-                                <a style={{color: '#000'}}>
-                                    <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 20px 0', display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
-                                        {whatsappicon()} &nbsp; WhatsApp
-                                    </div>
-                                </a>
-                            </div>
-                        </Grid>
-                    </Grid>
-                    <Grid
-                        container
-                        marginTop={'2rem'}
-                    >
-                        <Grid item md={6} xs={12}>
-                            <div style={{color: '#E63030', fontWeight: 800, fontSize: '1.2rem', marginBottom: '1.4rem'}}>
-                                &copy; 2021 SUBNUB TECHNOLOGIES PVT LTD
-                            </div>
-                        </Grid>
-                        <Grid item md={6} xs={12}>
-                            <div style={{color: '#E63030', fontWeight: 800, fontSize: '1.2rem', textAlign: 'right'}}>
-                                Made with ❤️ in 🇮🇳
-                            </div>
-                        </Grid>
-                    </Grid>
-                </Container>
-            </div>
         </Box>
     )
 }
