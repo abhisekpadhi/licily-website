@@ -152,19 +152,25 @@ function shuffle(array: string[]) {
 
 function AnimatedHeroWord() {
     // after 4 seconds fadeout, 2seconds after fadeout, fadein new word
-    const [word, setWord] = useState("🛍 Grocery",);
+    const [word, setWord] = useState("🛍 Grocery");
     const [out, setOut] = useState(false);
     useEffect(() => {
-        const outInterval = setInterval(() => {
-            setOut(true);
-        }, 4000);
-        const wordInterval = setInterval(() => {
+        const setHeroWord = () => {
             setWord(shuffle(herowords)[0]);
             setOut(false);
-        }, 5200);
+        };
+        // set first word
+        setHeroWord();
+        // after 4 sec. fade out current word &
+        // start a 1sec timeout after which, set new word
+        const outInterval = setInterval(() => {
+            setOut(true);
+            setTimeout(() => {
+                setHeroWord();
+            }, 1400);
+        }, 4000);
         return () => {
             clearInterval(outInterval);
-            clearInterval(wordInterval);
         };
     }, []);
     return (
