@@ -11,6 +11,9 @@ import {aiPick} from '../common/icons/aiPicking';
 import {deliveryBikeIcon} from '../common/icons/deliveryBikeIcon';
 import {shockedEmoji} from '../common/icons/shockedEmoji';
 import {fbIcon, instaIcon, twitterIcon, whatsappicon} from '../common/icons/socialIcons';
+import 'animate.css';
+import {func} from 'prop-types';
+import {useEffect, useState} from 'react';
 
 const CustomAppBar = styled(AppBar)<AppBarProps>(({theme}) => ({
     backgroundColor: '#FFEDED',
@@ -72,7 +75,7 @@ const HeroWord = styled.div`
     color: #E63030;
     font-family: Lora;
     font-weight: 800;
-    font-size: 6rem;
+    font-size: 5.4rem;
 `;
 
 const HeroSection = styled.div`
@@ -102,8 +105,79 @@ const Description = styled.div`
 `;
 
 
+const herowords = [
+    "🛍 Grocery",
+    "☕️ Coffee",
+    "🍼 Milk",
+    "🍳 Egg",
+    "🥣 Cereals",
+    "🍞 Bread",
+    "🍗 Meat",
+    "🥦 Broccoli",
+    "🥭 Fruits",
+    "🧀 Cheese",
+    "🥐 Croissant",
+    "🍪 Cookie",
+    "💊 Medicine",
+    "🥂 Beverage",
+    "🧴 Sanitizer",
+    "🧻 Tissue",
+    "🧼 Soap",
+    "🌿 Mint",
+    "🌺 Flowers",
+    "🪥 Brush",
+    "🪒 Razor",
+    "🧷 Safetypin",
+    "😷 Mask"
+]
+
+function shuffle(array: string[]) {
+    let currentIndex = array.length,  randomIndex;
+
+    // While there remain elements to shuffle...
+    while (currentIndex != 0) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+
+        // And swap it with the current element.
+        [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]];
+    }
+
+    return array;
+}
+
+
+function AnimatedHeroWord() {
+    // after 4 seconds fadeout, 2seconds after fadeout, fadein new word
+    const [word, setWord] = useState('Grocery');
+    const [out, setOut] = useState(false);
+    useEffect(() => {
+        const outInterval = setInterval(() => {
+            setOut(true);
+        }, 4000);
+        const wordInterval = setInterval(() => {
+            setOut(false);
+            setWord(shuffle(herowords)[0]);
+        }, 4200);
+        return () => {
+            clearInterval(outInterval);
+            clearInterval(wordInterval);
+        };
+    }, []);
+    return (
+        <HeroWord className={`animate__animated ${out ? 'animate__fadeOut' : 'animate__fadeIn'}`}>
+            {word}
+        </HeroWord>
+    )
+}
 
 const Home: NextPage = () => {
+
+    const getHeroWord = () => <AnimatedHeroWord />
+
     return (
         <Box>
             <Head>
@@ -149,11 +223,9 @@ const Home: NextPage = () => {
                         container
                         spacing={4}
                     >
-                        <Grid item xs>
+                        <Grid item xs display={'flex'} alignItems={'center'}>
                             <HeroSection>
-                                <HeroWord>
-                                    Grocery
-                                </HeroWord>
+                                {getHeroWord()}
                                 <div>
                                     Delivered to you
                                 </div>
