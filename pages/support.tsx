@@ -8,6 +8,7 @@ import AccordionSummary from '@mui/material/AccordionSummary';
 import Typography from '@mui/material/Typography';
 import {useState} from 'react';
 import 'animate.css';
+import Link from 'next/link';
 
 const SectionTitle = styled.div`
     font-size: 3.4rem;
@@ -57,7 +58,7 @@ const Support: NextPage = () => {
                     <Typography>
                         We make sure that customer acknowledges quality and quantity of items at the time of delivery.
                         For circumstances when customer was not present in-person at the time of delivery or opted for no contact delivery,
-                        we are happy to arrange return of the product and issue a refund governed by our returns and refund policy.
+                        we are happy to arrange return of the product and issue a refund governed by our <Link href={'/returns'}><a>returns and refund policy.</a></Link>
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -142,7 +143,7 @@ const Support: NextPage = () => {
                 <AccordionDetails>
                     <Typography>
                         You can return any items from your order hassle-free at the time of receiving the delivery & refund will be processed immediately.
-                        If you need to return product post delivery, we are happy to arrange return of the product and issue a refund governed by our returns and refund policy.
+                        If you need to return product post delivery, we are happy to arrange return of the product and issue a refund governed by our <Link href={'/returns'}><a>returns and refund policy.</a></Link>
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -167,7 +168,7 @@ const Support: NextPage = () => {
                                         Phone/WhatsApp
                                     </Title>
                                     <Description>
-                                        +917760601643
+                                        +917978608446
                                     </Description>
                                 </div>
                             </Grid>

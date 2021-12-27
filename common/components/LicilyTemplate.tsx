@@ -161,6 +161,11 @@ function LicilyTemplate(props: {component: ReactNode}) {
                     >
                         <Grid item md={3} xs={6}>
                             <div>
+                                <Link href={'/returns'}>
+                                    <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 14px 0'}}>
+                                        <a style={{color: '#000'}}>Return & Refund</a>
+                                    </div>
+                                </Link>
                                 <Link href={'/areas'}>
                                     <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 14px 0'}}>
                                         <a style={{color: '#000'}}>Delivery areas</a>
