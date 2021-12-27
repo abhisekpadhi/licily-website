@@ -282,7 +282,15 @@ const Home: NextPage = () => {
                 </Container>
             </div>
 
-            <div style={{backgroundColor: '#FFFAED', paddingTop: '4rem', paddingBottom: '4rem',}}>
+            <img
+                src={'/bbsr_del.png'}
+                width={'100%'}
+                // height={'100%'}
+                alt={'licily grocery delivery area bhubaneswar'}
+                style={{marginBottom: -6}}
+            />
+
+            {/*<div style={{backgroundColor: '#FFFAED', paddingTop: '4rem', paddingBottom: '4rem',}}>
                 <Container>
                     <SectionTitle style={{color: '#C38D00'}}>
                         Delivering To
@@ -303,7 +311,7 @@ const Home: NextPage = () => {
                         </Grid>
                     </ContentSection>
                 </Container>
-            </div>
+            </div>*/}
 
             <div style={{backgroundColor: '#EDFBFF', paddingTop: '4rem', paddingBottom: '4rem',}}>
                 <Container>
