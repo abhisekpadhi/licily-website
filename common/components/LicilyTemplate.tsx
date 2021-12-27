@@ -101,7 +101,7 @@ const Description = styled.div`
 
 function LicilyTemplate(props: {component: ReactNode}) {
     return (
-        <Box component="main" sx={{ flexGrow: 1 }}>
+        <Box component="main" display={'flex'} flex={1} flexDirection={'column'} flexGrow={1} height={'100%'}>
             <Head>
                 <title>Licily - Grocery Delivery</title>
                 <meta name="description" content="Licily delivers grocery at your doorstep in minutes" />
@@ -148,9 +148,10 @@ function LicilyTemplate(props: {component: ReactNode}) {
                     </TopNavRight>
                 </Toolbar>
             </CustomAppBar>
-            {props.component}
-
-            <div style={{backgroundColor: '#FFEDED', paddingTop: '4rem', paddingBottom: '4rem', backgroundImage: `url("/footerbg.svg")`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
+            <Box display={'flex'} flex={1} flexDirection={'column'} flexGrow={1}>
+                {props.component}
+            </Box>
+            <Box display={'flex'} flex={1} flexDirection={'column'} flexGrow={1} style={{backgroundColor: '#FFEDED', paddingTop: '4rem', paddingBottom: '4rem', backgroundImage: `url("/footerbg.svg")`, backgroundSize: 'cover', backgroundPosition: 'center'}}>
                 <Container>
                     <SectionTitle style={{color: '#0087AD', textAlign: 'left'}}>
                         {logo()}
@@ -222,7 +223,7 @@ function LicilyTemplate(props: {component: ReactNode}) {
                         </Grid>
                     </Grid>
                 </Container>
-            </div>
+            </Box>
         </Box>
     )
 }

@@ -343,8 +343,8 @@ const Home: NextPage = () => {
                                         />
                                     </div>
                                     <div style={{paddingLeft: 16}}>
-                                        <div style={{fontWeight: 800, marginBottom: 8}}>Sonali Kunduri</div>
-                                        <div>Licily has been a life saver  saver in emergency sitations for all my grocery needs</div>
+                                        <div style={{fontWeight: 800, marginBottom: 8}}>Sonali K</div>
+                                        <div>Licily has been a life saver  saver in emergency situations for all my grocery needs</div>
                                     </div>
                                 </Paper>
                             </Grid>
@@ -361,15 +361,16 @@ const Home: NextPage = () => {
                                 >
                                     <div>
                                         <img
-                                            src={'/customer.png'}
+                                            src={'/p2.jpg'}
                                             width={62}
                                             height={62}
                                             alt={'licily grocery delivery area bhubaneswar'}
+                                            style={{borderRadius: 100}}
                                         />
                                     </div>
                                     <div style={{paddingLeft: 16}}>
-                                        <div style={{fontWeight: 800, marginBottom: 8}}>Sonali Kunduri</div>
-                                        <div>Licily has been a life saver  saver in emergency sitations for all my grocery needs</div>
+                                        <div style={{fontWeight: 800, marginBottom: 8}}>Rahul Chakraborty</div>
+                                        <div>Unbelievable speed, cannot believe these guys delivered my groceries so fast</div>
                                     </div>
                                 </Paper>
                             </Grid>
@@ -391,15 +392,16 @@ const Home: NextPage = () => {
                                 >
                                     <div>
                                         <img
-                                            src={'/customer.png'}
+                                            src={'/p3.jpg'}
                                             width={62}
                                             height={62}
                                             alt={'licily grocery delivery area bhubaneswar'}
+                                            style={{borderRadius: 100}}
                                         />
                                     </div>
                                     <div style={{paddingLeft: 16}}>
-                                        <div style={{fontWeight: 800, marginBottom: 8}}>Sonali Kunduri</div>
-                                        <div>Licily has been a life saver  saver in emergency sitations for all my grocery needs</div>
+                                        <div style={{fontWeight: 800, marginBottom: 8}}>Abijit Pattnaik</div>
+                                        <div>Returns process was so smooth with Licily, I'm very happy with their services</div>
                                     </div>
                                 </Paper>
                             </Grid>
@@ -416,15 +418,16 @@ const Home: NextPage = () => {
                                 >
                                     <div>
                                         <img
-                                            src={'/customer.png'}
+                                            src={'/04.jpg'}
                                             width={62}
                                             height={62}
                                             alt={'licily grocery delivery area bhubaneswar'}
+                                            style={{borderRadius: 100}}
                                         />
                                     </div>
                                     <div style={{paddingLeft: 16}}>
-                                        <div style={{fontWeight: 800, marginBottom: 8}}>Sonali Kunduri</div>
-                                        <div>Licily has been a life saver  saver in emergency sitations for all my grocery needs</div>
+                                        <div style={{fontWeight: 800, marginBottom: 8}}>Pritam Krishna</div>
+                                        <div>Could not find a coupon but found all the grocery items I need and the fast delivery amazes me</div>
                                     </div>
                                 </Paper>
                             </Grid>
