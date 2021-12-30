@@ -189,6 +189,11 @@ function LicilyTemplate(props: {component: ReactNode}) {
                                         <a style={{color: '#000'}}>Privacy policy</a>
                                     </div>
                                 </Link>
+                                <Link href={'/compliance'}>
+                                    <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 14px 0'}}>
+                                        <a style={{color: '#000'}}>Compliance</a>
+                                    </div>
+                                </Link>
 
                             </div>
                         </Grid>

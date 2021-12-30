@@ -78,7 +78,7 @@ const Privacy: NextPage = () => {
                             How Can You Correct Inaccuracies In The Information?
                         </Title>
                         <div>
-                            To correct or update any information you have provided, the Site allows you to do it online from my-account page. In the event of loss of access details you can send an e-mail to: support@Licily.com
+                            To correct or update any information you have provided, the Site allows you to do it online from my-account page. In the event of loss of access details you can send an e-mail to: care@licily.com
                         </div>
                         <Title>
                             Policy Updates
