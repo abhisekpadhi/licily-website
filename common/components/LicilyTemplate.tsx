@@ -7,7 +7,7 @@ import styled from '@emotion/styled';
 import AppBar, {AppBarProps} from '@mui/material/AppBar';
 import {ReactNode} from 'react';
 import Link from 'next/link';
-import {fbIcon, instaIcon, twitterIcon, whatsappicon} from '../icons/socialIcons';
+import {fbIcon, instaIcon, linkedinIcon, twitterIcon, whatsappicon} from '../icons/socialIcons';
 
 const CustomAppBar = styled(AppBar)<AppBarProps>(({theme}) => ({
     backgroundColor: '#FFEDED',
@@ -194,6 +194,11 @@ function LicilyTemplate(props: {component: ReactNode}) {
                         </Grid>
                         <Grid item md={3} xs={6}>
                             <div>
+                                <a target={'_blank'} href={'https://www.facebook.com/licilyapp/'} style={{color: '#000'}}>
+                                    <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 20px 0', display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+                                        {fbIcon()} &nbsp; Facebook
+                                    </div>
+                                </a>
                                 <a target={'_blank'} href={'https://www.instagram.com/licilyapp/'} style={{color: '#000'}}>
                                     <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 20px 0', display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
                                         {instaIcon()} &nbsp; Instagram
@@ -207,6 +212,11 @@ function LicilyTemplate(props: {component: ReactNode}) {
                                 <a target={'_blank'} href={'https://wa.link/zis5bl'} style={{color: '#000'}}>
                                     <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 20px 0', display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
                                         {whatsappicon()} &nbsp; WhatsApp
+                                    </div>
+                                </a>
+                                <a target={'_blank'} href={'https://www.linkedin.com/company/licily'} style={{color: '#000'}}>
+                                    <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 20px 0', display: 'flex', flexDirection: 'row', alignItems: 'center'}}>
+                                        {linkedinIcon()} &nbsp; LinkedIn
                                     </div>
                                 </a>
                             </div>

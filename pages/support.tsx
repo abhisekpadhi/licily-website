@@ -49,7 +49,7 @@ const Support: NextPage = () => {
                     aria-controls="panel1bh-content"
                     id="panel1bh-header"
                 >
-                    <Typography sx={{ width: '33%', flexShrink: 0, fontWeight: 600, fontSize: 18 }}>
+                    <Typography sx={{ width: '100%', flexShrink: 0, fontWeight: 600, fontSize: 18 }}>
                         How to return product after delivery?
                     </Typography>
                     {/*<Typography sx={{ color: 'text.secondary' }}>I am an accordion</Typography>*/}
@@ -67,7 +67,7 @@ const Support: NextPage = () => {
                     aria-controls="panel2bh-content"
                     id="panel2bh-header"
                 >
-                    <Typography sx={{ width: '33%', flexShrink: 0, fontWeight: 600, fontSize: 18 }}>
+                    <Typography sx={{ width: '100%', flexShrink: 0, fontWeight: 600, fontSize: 18 }}>
                         What are your delivery timings?
                     </Typography>
                 </AccordionSummary>
@@ -83,7 +83,7 @@ const Support: NextPage = () => {
                     aria-controls="panel3bh-content"
                     id="panel3bh-header"
                 >
-                    <Typography sx={{ width: '63%', flexShrink: 0, fontWeight: 600, fontSize: 18 }}>
+                    <Typography sx={{ width: '100%', flexShrink: 0, fontWeight: 600, fontSize: 18 }}>
                         what if I don’t receive my order by the scheduled time?
                     </Typography>
                 </AccordionSummary>
@@ -99,7 +99,7 @@ const Support: NextPage = () => {
                     aria-controls="panel4bh-content"
                     id="panel4bh-header"
                 >
-                    <Typography sx={{ width: '33%', flexShrink: 0, fontWeight: 600, fontSize: 18 }}>
+                    <Typography sx={{ width: '100%', flexShrink: 0, fontWeight: 600, fontSize: 18 }}>
                         How can I cancel my order?
                     </Typography>
                 </AccordionSummary>
@@ -119,7 +119,7 @@ const Support: NextPage = () => {
                     aria-controls="panel5bh-content"
                     id="panel5bh-header"
                 >
-                    <Typography sx={{ width: '33%', flexShrink: 0, fontWeight: 600, fontSize: 18 }}>
+                    <Typography sx={{ width: '100%', flexShrink: 0, fontWeight: 600, fontSize: 18 }}>
                         Can I reschedule my order?
                     </Typography>
                 </AccordionSummary>
@@ -136,7 +136,7 @@ const Support: NextPage = () => {
                     aria-controls="panel6bh-content"
                     id="panel6bh-header"
                 >
-                    <Typography sx={{ width: '33%', flexShrink: 0, fontWeight: 600, fontSize: 18 }}>
+                    <Typography sx={{ width: '100%', flexShrink: 0, fontWeight: 600, fontSize: 18 }}>
                         What If I want to return something?
                     </Typography>
                 </AccordionSummary>
