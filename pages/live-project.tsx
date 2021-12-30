@@ -33,7 +33,7 @@ const Areas: NextPage = () => {
             <div style={{backgroundColor: '#FFEDED', paddingTop: '4rem', paddingBottom: '4rem',}}>
                 <Container>
                     <SectionTitle style={{color: '#E63030'}}>
-                        Internship
+                        Live project
                     </SectionTitle>
                     <ContentSection>
                         <Title>
