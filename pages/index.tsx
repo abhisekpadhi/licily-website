@@ -1,70 +1,17 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
 import AppBar, {AppBarProps} from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
 import styled from '@emotion/styled';
-import {logo} from '../common/icons/logo';
-import {Container, Grid, Hidden, Paper} from '@mui/material';
+import {Button, Container, Grid, Hidden, Paper} from '@mui/material';
 import {heroGraphics} from '../common/icons/heroGraphics';
 import {aiPick} from '../common/icons/aiPicking';
 import {deliveryBikeIcon} from '../common/icons/deliveryBikeIcon';
 import {shockedEmoji} from '../common/icons/shockedEmoji';
-import {fbIcon, instaIcon, twitterIcon, whatsappicon} from '../common/icons/socialIcons';
 import 'animate.css';
-import {func} from 'prop-types';
 import {useEffect, useState} from 'react';
+import {useRouter} from 'next/router';
 
-const CustomAppBar = styled(AppBar)<AppBarProps>(({theme}) => ({
-    backgroundColor: '#FFEDED',
-    boxShadow: 'none',
-    borderBottomWidth: 1,
-    borderBottomStyle: 'solid',
-    borderBottomColor: '#E63030',
-    color: '#000',
-}));
 
-const TopNavContainer = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-`;
-
-const TopNavRight = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-`
-
-const MenuItem = styled.a`
-    font-family: Lora;
-    font-size: 18px;
-    font-weight: 600;
-    margin-left: 2rem;
-    color: #000;
-`
-
-const HiringBtn = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 170px;
-    border-radius: 100px;
-    background-color: #FFD9D9;
-    border: 1px solid #E63030;
-    padding: 8px 14px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-`
-
-const HiringBtnRedDot = styled.div`
-    width: 16px;
-    height: 16px;
-    background-color: #E63030;
-    border-radius: 100%;
-`
 
 const ContentSection = styled.div`
     padding-top: 3.4rem;
@@ -128,7 +75,9 @@ const herowords = [
     "🪥 Brush",
     "🪒 Razor",
     "🧷 Safetypin",
-    "😷 Mask"
+    "😷 Mask",
+    "🐠 Fish",
+    "🍤 Prawn",
 ]
 
 function shuffle(array: string[]) {
@@ -181,13 +130,128 @@ function AnimatedHeroWord() {
 }
 
 const Home: NextPage = () => {
-
+    const router = useRouter();
     const getHeroWord = () => <AnimatedHeroWord />
+
+    const liveProjectDesktop = () => (
+        <Box
+            display={'flex'}
+            flexDirection={'row'}
+            alignItems={'center'}
+            justifyContent={'center'}
+        >
+            <Box
+                display={'flex'}
+                flexDirection={'row'}
+                alignItems={'center'}
+                justifyContent={'space-between'}
+                borderRadius={2}
+                paddingX={3.8}
+                paddingY={1.2}
+                style={{
+                    backgroundColor:'rgb(252 208 208)',
+                }}
+            >
+                <Box
+                    display={'flex'}
+                    flexDirection={'row'}
+                    alignItems={'center'}
+                    paddingRight={10}
+                >
+                    <Box className={`blob red`}/> &nbsp; &nbsp; &nbsp;
+                    <Box>
+                        <Box
+                            fontSize={'2rem'}
+                            color={'#E63030'}
+                            fontWeight={800}
+                        >
+                            Live project!
+                        </Box>
+                        2 Months, Register before 10th January, 2022
+                    </Box>
+
+                </Box>
+                <Button
+                    onClick={() => router.push('/live-project')}
+                    variant={'outlined'}
+                    color={'secondary'}
+                    style={{fontSize: '1.24rem', fontWeight:800, borderRadius: 100}}
+                >
+                    Apply
+                </Button>
+
+            </Box>
+
+        </Box>
+    )
+
+    const liveProjectMobile = () => (
+        <Box
+            display={'flex'}
+            flexDirection={'row'}
+            alignItems={'center'}
+            justifyContent={'center'}
+        >
+            <Box
+                display={'flex'}
+                flexDirection={'column'}
+                justifyContent={'space-between'}
+                borderRadius={2}
+                paddingX={2.2}
+                paddingY={2.4}
+                style={{
+                    backgroundColor: 'rgb(252 208 208)',
+                }}
+            >
+                <Box
+                    display={'flex'}
+                    flexDirection={'row'}
+                    alignItems={'center'}
+                    marginBottom={2}
+                >
+                    <Box width={24} height={24} marginRight={2}>
+                        <Box className={`blob red`} /> &nbsp; &nbsp; &nbsp;
+                    </Box>
+
+                    <Box>
+                        <Box
+                            fontSize={'1.5rem'}
+                            color={'#E63030'}
+                            fontWeight={800}
+                        >
+                            Live project!
+                        </Box>
+                        <Box
+                            fontSize={'0.8rem'}
+                        >
+                            2 Months, Register before 10th January, 2022
+                        </Box>
+                    </Box>
+
+                </Box>
+                <Button
+                    onClick={() => router.push('/live-project')}
+                    variant={'outlined'}
+                    color={'secondary'}
+                    style={{fontSize: '1.24rem', fontWeight:800, borderRadius: 100}}
+                >
+                    Apply
+                </Button>
+            </Box>
+
+        </Box>
+    )
 
     return (
         <Box>
             <Container>
                 <ContentSection>
+                    <Hidden mdDown>
+                        {liveProjectDesktop()}
+                    </Hidden>
+                    <Hidden mdUp>
+                        {liveProjectMobile()}
+                    </Hidden>
                     <Grid
                         container
                         spacing={4}

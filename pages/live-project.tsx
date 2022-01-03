@@ -1,8 +1,9 @@
 import type { NextPage } from 'next'
 import Box from '@mui/material/Box';
 import styled from '@emotion/styled';
-import {Container} from '@mui/material';
+import {Button, Container} from '@mui/material';
 import 'animate.css';
+import Script from 'next/script';
 
 const SectionTitle = styled.div`
     font-size: 3.4rem;
@@ -30,6 +31,7 @@ const ContentSection = styled.div`
 const Areas: NextPage = () => {
     return (
         <Box>
+            <Script src={'https://tally.so/widgets/embed.js'} />
             <div style={{backgroundColor: '#FFEDED', paddingTop: '4rem', paddingBottom: '4rem',}}>
                 <Container>
                     <SectionTitle style={{color: '#E63030'}}>
@@ -78,18 +80,32 @@ const Areas: NextPage = () => {
                                     Fully remote
                                 </li>
                             </ol>
-
                         </Description>
 
+                        <strong>Duration:</strong> 2 Months (Feb 2022 - March 2022)
+                        <br />
+                        <strong>Location:</strong> Remote + On-site
+
                         <Title>
-                            Please fill the form before 10th January, 2020, 11:59pm.
+                            Please fill the form before 10th January, 2022, 11:59pm.
                         </Title>
+
                         <div>
-                            <iframe
-                                src="https://docs.google.com/forms/d/e/1FAIpQLSeS_8uITYKXgdaLJ4uHJqlLM9mc5yliSgoRGcF5EVUjob3Hsw/viewform?embedded=true"
-                                width="640" height="2070" frameBorder="0" marginHeight={0} marginWidth={0}>
-                                Loading…
-                            </iframe>
+                            <Button
+                                onClick={() => window.open('https://tally.so/r/w4zgYm')}
+                                variant={'contained'}
+                                color={'secondary'}
+                                fullWidth
+                                style={{
+                                    padding: '14px 0',
+                                    fontFamily: 'Nunito',
+                                    fontWeight: 800,
+                                    fontSize: '1.4rem',
+                                    marginTop: 20,
+                                }}
+                            >
+                                Apply Now
+                            </Button>
                         </div>
                     </ContentSection>
                 </Container>
