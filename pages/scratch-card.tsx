@@ -43,7 +43,7 @@ const Privacy: NextPage = () => {
                             <br />
                         </Title>
                         <div>
-                            Policy:
+                            Terms & Conditions:
                             <ul>
                                 <li>
                                     Customer can see the list of cards in the app, tap on a card, scratch and unlock the reward.
@@ -82,10 +82,13 @@ const Privacy: NextPage = () => {
                                     Licily reserves the right to impose additional points limits within the overall applicable limit.
                                 </li>
                                 <li>
-                                    Licily reserves the right to award offers and related benefits as per internal policy decided by PhonePe from time to time.
+                                    Licily reserves the right to award offers and related benefits as per internal policy decided from time to time.
                                 </li>
                                 <li>
                                     In case of any cancellations, the reward points given on the transaction will continue to remain with customer reward points balance and non-withdrawable to your bank account. This can continue to be used on transaction on Licily app/website.
+                                </li>
+                                <li>
+                                    Licily reserves the right to amend, modify, cancel, update or withdraw this Program at any time without notice. Upon such premature suspension, inconvenience, cessation, withdrawal, termination or closure by the Company, no person shall be entitled to claim loss of any kind whatsoever.
                                 </li>
                             </ul>
 

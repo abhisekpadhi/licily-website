@@ -43,7 +43,7 @@ const Privacy: NextPage = () => {
                             <br />
                         </Title>
                         <div>
-                            Policy:
+                            Terms & Conditions:
                             <ul>
                                 <li>
                                     Customers earn upto 1% of total payable amount of every order with total amount above Rs.100 as reward points in the account when ordering essentials on Licily app & website.
@@ -58,13 +58,16 @@ const Privacy: NextPage = () => {
                                     Reward points can be redeemed to pay for orders.
                                 </li>
                                 <li>
-                                    Reward points are non transferrable. It is tied to customer Licily account.
+                                    Reward points are non transferable. It is tied to customer Licily account.
                                 </li>
                                 <li>
                                     Reward points expire after 6 months of inactivity.
                                 </li>
                                 <li>
                                     Reward points can be redeemed only for transactions on Licily app & website.
+                                </li>
+                                <li>
+                                    Licily reserves the right to amend, modify, cancel, update or withdraw this Program at any time without notice. Upon such premature suspension, inconvenience, cessation, withdrawal, termination or closure by the Company, no person shall be entitled to claim loss of any kind whatsoever.
                                 </li>
                             </ul>
 

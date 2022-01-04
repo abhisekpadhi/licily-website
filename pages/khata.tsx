@@ -57,7 +57,7 @@ const Privacy: NextPage = () => {
                             <br />
                         </Title>
                         <div>
-                            Policy:
+                            Terms & Conditions:
                             <ul>
                                 <li>
                                     Credit is enabled for every customer who register an account on Licily app/website.
@@ -130,6 +130,9 @@ const Privacy: NextPage = () => {
                                 </li>
                                 <li>
                                     Credit is unavailable when using discount.
+                                </li>
+                                <li>
+                                    Licily reserves the right to amend, modify, cancel, update or withdraw this Program at any time without notice. Upon such premature suspension, inconvenience, cessation, withdrawal, termination or closure by the Company, no person shall be entitled to claim loss of any kind whatsoever.
                                 </li>
                             </ul>
 
