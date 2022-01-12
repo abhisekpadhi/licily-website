@@ -246,12 +246,12 @@ const Home: NextPage = () => {
         <Box>
             <Container>
                 <ContentSection>
-                    <Hidden mdDown>
-                        {liveProjectDesktop()}
-                    </Hidden>
-                    <Hidden mdUp>
-                        {liveProjectMobile()}
-                    </Hidden>
+                    {/*<Hidden mdDown>*/}
+                    {/*    {liveProjectDesktop()}*/}
+                    {/*</Hidden>*/}
+                    {/*<Hidden mdUp>*/}
+                    {/*    {liveProjectMobile()}*/}
+                    {/*</Hidden>*/}
                     <Grid
                         container
                         spacing={4}

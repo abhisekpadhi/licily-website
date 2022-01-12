@@ -42,7 +42,7 @@ const Areas: NextPage = () => {
                             About Licily
                         </Title>
                         <Description>
-                            Licily is a technology startup founded by ex-swiggy, udaan, reliance-retail, solving hard problems in last mile grocery & other essentials delivery in Bharat 🇮🇳.
+                            Licily is a technology startup founded by ex-swiggy, udaan, reliance-retail staffs solving hard problems in last mile grocery & other essentials delivery in Bharat 🇮🇳.
                         </Description>
                         <Title>
                             Why are we doing this?
