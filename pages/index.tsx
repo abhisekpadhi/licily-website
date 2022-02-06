@@ -1,5 +1,4 @@
 import type { NextPage } from 'next'
-import AppBar, {AppBarProps} from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import styled from '@emotion/styled';
 import {Button, Container, Grid, Hidden, Paper} from '@mui/material';
@@ -117,7 +116,7 @@ function AnimatedHeroWord() {
             setTimeout(() => {
                 setHeroWord();
             }, 1400);
-        }, 4000);
+        }, 3000);
         return () => {
             clearInterval(outInterval);
         };
