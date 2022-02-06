@@ -118,7 +118,7 @@ function LicilyTemplate(props: {component: ReactNode}) {
                     </div>
                     <TopNavRight>
                         <a target={'_blank'}
-                           href={'https://veiled-equinox-e5e.notion.site/Licily-Jobs-b1d4d933bd4f4237b3ad72c5e83ed3a8'}
+                           href={'https://veiled-equinox-e5e.notion.site/Licily-Jobs-b1d4d933bd4f4237b3ad72c5e83ed3a8'} rel="noreferrer"
                         >
                             <HiringBtn>
                                 <HiringBtnRedDot />
@@ -163,12 +163,12 @@ function LicilyTemplate(props: {component: ReactNode}) {
                             <div>
                                 <Link href={'/returns'}>
                                     <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 14px 0'}}>
-                                        <a style={{color: '#000'}}>Return & Refund</a>
+                                        <a href={'#'} style={{color: '#000'}}>Return & Refund</a>
                                     </div>
                                 </Link>
                                 <Link href={'/areas'}>
                                     <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 14px 0'}}>
-                                        <a style={{color: '#000'}}>Delivery areas</a>
+                                        <a  href={'#'} style={{color: '#000'}}>Delivery areas</a>
                                     </div>
                                 </Link>
                                 <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 14px 0'}}>
@@ -176,22 +176,22 @@ function LicilyTemplate(props: {component: ReactNode}) {
                                 </div>
                                 <Link href={'/support'}>
                                     <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 14px 0'}}>
-                                        <a style={{color: '#000'}}>Customer support</a>
+                                        <a  href={'#'} style={{color: '#000'}}>Customer support</a>
                                     </div>
                                 </Link>
                                 <Link href={'/terms'}>
                                     <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 14px 0'}}>
-                                        <a style={{color: '#000'}}>Terms of service</a>
+                                        <a  href={'#'} style={{color: '#000'}}>Terms of service</a>
                                     </div>
                                 </Link>
                                 <Link href={'/privacy'}>
                                     <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 14px 0'}}>
-                                        <a style={{color: '#000'}}>Privacy policy</a>
+                                        <a  href={'#'} style={{color: '#000'}}>Privacy policy</a>
                                     </div>
                                 </Link>
                                 <Link href={'/compliance'}>
                                     <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 14px 0'}}>
-                                        <a style={{color: '#000'}}>Compliance</a>
+                                        <a  href={'#'} style={{color: '#000'}}>Compliance</a>
                                     </div>
                                 </Link>
 
@@ -233,7 +233,7 @@ function LicilyTemplate(props: {component: ReactNode}) {
                     >
                         <Grid item md={6} xs={12}>
                             <div style={{color: '#E63030', fontWeight: 800, fontSize: '1.2rem', marginBottom: '1.4rem'}}>
-                                &copy; 2021 SUBNUB TECHNOLOGIES PVT LTD
+                                &copy; 2021 SAMANTARAY ALLIANCE PVT LTD
                             </div>
                         </Grid>
                         <Grid item md={6} xs={12}>
