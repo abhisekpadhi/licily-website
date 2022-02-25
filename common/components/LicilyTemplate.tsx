@@ -189,11 +189,11 @@ function LicilyTemplate(props: {component: ReactNode}) {
                                         <a  href={'#'} style={{color: '#000'}}>Privacy policy</a>
                                     </div>
                                 </Link>
-                                <Link href={'/compliance'}>
+                                {/*<Link href={'/compliance'}>
                                     <div style={{fontWeight: 800, fontSize: 18, padding: '0 0 14px 0'}}>
                                         <a  href={'#'} style={{color: '#000'}}>Compliance</a>
                                     </div>
-                                </Link>
+                                </Link>*/}
 
                             </div>
                         </Grid>
@@ -233,7 +233,7 @@ function LicilyTemplate(props: {component: ReactNode}) {
                     >
                         <Grid item md={6} xs={12}>
                             <div style={{color: '#E63030', fontWeight: 800, fontSize: '1.2rem', marginBottom: '1.4rem'}}>
-                                &copy; 2021 SAMANTARAY ALLIANCE PVT LTD
+                                &copy; 2021 SubNub Technologies PVT LTD
                             </div>
                         </Grid>
                         <Grid item md={6} xs={12}>

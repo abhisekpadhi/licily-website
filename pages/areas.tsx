@@ -45,9 +45,9 @@ const Areas: NextPage = () => {
                                     <Title style={{color: '#E63030', fontWeight: 800}}>
                                         Bhubaneswar
                                     </Title>
-                                    <Description>
-                                        Z1 Estate
-                                    </Description>
+                                    {/*<Description>*/}
+                                    {/*    Z1 Estate*/}
+                                    {/*</Description>*/}
                                 </div>
                             </Grid>
                             {/*<Grid item xs display={'flex'} alignItems={'center'} justifyContent={'center'}>

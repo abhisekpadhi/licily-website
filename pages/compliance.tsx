@@ -44,20 +44,20 @@ const Privacy: NextPage = () => {
                         <div>
                             <ol>
                                 <li>
-                                    Samantaray Alliance Pvt. Ltd. (SAPL) is a company registered under the Companies Act, 2013 (CIN U80903OR2020PTC034017) and has its registered office at Plot No-1149/2647, Bishnu Nagar, Near Radhika Tower, Tankapani Road Bhubaneswar Khordha OR 751018 IN
-                                    .SAPL operates Licily App (for iOS & Android), a social networking platform and the website Licily App Website
+                                    SubNub Technologies Pvt. Ltd. (STPL) is a company registered under the Companies Act, 2013 (CIN U80903OR2020PTC034017) and has its registered office at PLOT NO 331/1946 B,SRI AUROBINDO NAGAR, CHANDRASEKHARPUR, BHUBANESWAR KHORDA Khordha OR 751016 IN
+                                    .STPL operates Licily App (for iOS & Android), a grocery delivery platform and the website Licily.com.
                                 </li>
-                                <li>
-                                    <strong>Significant Social Media Intermediary</strong>
-                                    <br />
-                                    SAPL is a Significant Social Media Intermediary and has implemented policies and procedures to comply with the requirements of the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021 (hereinafter the “Rules”).
-                                </li>
+                                {/*<li>*/}
+                                {/*    <strong>Significant Social Media Intermediary</strong>*/}
+                                {/*    <br />*/}
+                                {/*    STPL is a Significant Social Media Intermediary and has implemented policies and procedures to comply with the requirements of the Information Technology (Intermediary Guidelines and Digital Media Ethics Code) Rules, 2021 (hereinafter the “Rules”).*/}
+                                {/*</li>*/}
                                 <li>
                                     <strong>Due Diligence</strong>
                                     <br />
                                     <ol>
                                         <li>
-                                            SAPL’s Privacy Policy, Terms & Conditions of Use (collectively “Licily Policies”) are available on its website as well as within the Licily App. SAPL will inform users of any changes in the Licily Policies at least once in a calendar year.
+                                            STPL’s Privacy Policy, Terms & Conditions of Use (collectively “Licily Policies”) are available on its website as well as within the Licily App. STPL will inform users of any changes in the Licily Policies at least once in a calendar year.
                                         </li>
                                         <li>
                                             In addition to other requirements prescribed by the Rules, Licily Policies specifically prohibit users from publishing content that is
@@ -73,22 +73,22 @@ const Privacy: NextPage = () => {
                                             Orders by a court of competent jurisdiction or Appropriate Government or its agency or takedown or any other purposes should be addressed for compliance to the Resident Grievance Officer with a copy to Nodal Contact Officer and Chief Compliance Officer (contact details below).
                                         </li>
                                         <li>
-                                            On receipt of a written request for information from a lawfully authorized government agency clearly stating the purpose for which it is required, SAPL shall provide such information or assistance in its control or possession to the government authority within 72 hours.
+                                            On receipt of a written request for information from a lawfully authorized government agency clearly stating the purpose for which it is required, STPL shall provide such information or assistance in its control or possession to the government authority within 72 hours.
                                         </li>
                                         <li>
-                                            In compliance with the Rules, registration information from a user and/or information which has been removed or to which access has been disabled, shall be retained by SAPL for a period of 180 days from the date of cancellation or withdrawal or removal or disablement.
+                                            In compliance with the Rules, registration information from a user and/or information which has been removed or to which access has been disabled, shall be retained by STPL for a period of 180 days from the date of cancellation or withdrawal or removal or disablement.
                                         </li>
                                     </ol>
                                 </li>
                                 <li>
                                     <strong>Additional Due Diligence</strong>
                                     <ol>
-                                        <li>The physical contact address of SAPL for the purposes of receiving communication addressed to it under the Rules is Plot No. 331/1943-B, Road No.6, Aurobindo Nagar, Chandrasekharpur, Bhubaneswar, Odisha, 751016, India.</li>
-                                        <li>SAPL has implemented the following mechanism for dealing with grievances:(i) Grievances relating to violation of the Rules must be addressed to the Resident Grievance Officer at redressal@licily.com with a copy to the Chief Compliance Officer at compliance.officer@licily.com. The complaint must contain such information as is necessary in order for SAPL to investigate and take action.(ii) Reported grievances will be acknowledged within 24 hours of receipt along with a unique identification number. Grievances will be disposed of within 15 days from date of receipt. Wherever practical, information on action taken or not taken by SAPL may be provided to the reporter of the grievance.(iii) Grievances by an individual relating to exposure of their private areas, full or partial nudity or depicting such individual in any sexual act or conduct; or impersonation in an electronic form, including artificially morphed images will be acted upon within 24 hours.(iv) A monthly compliance report containing information as specified by the Rules will be published on the website under the link Compliance.</li>
+                                        <li>The physical contact address of STPL for the purposes of receiving communication addressed to it under the Rules is Plot No. 331/1943-B, Road No.6, Aurobindo Nagar, Chandrasekharpur, Bhubaneswar, Odisha, 751016, India.</li>
+                                        <li>STPL has implemented the following mechanism for dealing with grievances:(i) Grievances relating to violation of the Rules must be addressed to the Resident Grievance Officer at redressal@licily.com with a copy to the Chief Compliance Officer at compliance.officer@licily.com. The complaint must contain such information as is necessary in order for STPL to investigate and take action.(ii) Reported grievances will be acknowledged within 24 hours of receipt along with a unique identification number. Grievances will be disposed of within 15 days from date of receipt. Wherever practical, information on action taken or not taken by STPL may be provided to the reporter of the grievance.(iii) Grievances by an individual relating to exposure of their private areas, full or partial nudity or depicting such individual in any sexual act or conduct; or impersonation in an electronic form, including artificially morphed images will be acted upon within 24 hours.(iv) A monthly compliance report containing information as specified by the Rules will be published on the website under the link Compliance.</li>
                                         <li>Users may opt for voluntary verification of accounts using an active Indian phone number. All such requests may be sent to redressal@licily.com or raised within the Licily App. A visual identifier will be shown against the profiles of users who have voluntarily verified themselves.</li>
-                                        <li>SAPL also displays a visible verification mark on content that is advertising or sponsored or is exclusively controlled.</li>
+                                        <li>STPL also displays a visible verification mark on content that is advertising or sponsored or is exclusively controlled.</li>
                                         <li>
-                                            SAPL has appointed Indian residents to ensure compliance with the Rules:
+                                            STPL has appointed Indian residents to ensure compliance with the Rules:
                                             <br />
                                             Chief Compliance Officer for ensuring compliance with the Information Technology Act, 2000 and Rules.
                                             <br />
@@ -111,7 +111,7 @@ const Privacy: NextPage = () => {
                                     </ol>
                                 </li>
                             </ol>
-                            Samantaray Alliance Pvt. Ltd. is the licensed owner of the brand licily.com and the website licily.com ('The Site'). Samantaray Alliance Pvt. Ltd. respects your privacy. This Privacy Policy provides concisely the manner your data is collected and used by Samantaray Alliance Pvt. Ltd. on the Site. As a visitor to the Site/Customer you are advised to please read the Privacy Policy carefully. By accessing the services provided by the Site you agree to the collection and use of your data by Samantaray Alliance Pvt. Ltd. in the manner provided in this Privacy Policy.
+                            SubNub Technologies Pvt. Ltd. is the licensed owner of the brand licily.com and the website licily.com ('The Site'). SubNub Technologies Pvt. Ltd. respects your privacy. This Privacy Policy provides concisely the manner your data is collected and used by SubNub Technologies Pvt. Ltd. on the Site. As a visitor to the Site/Customer you are advised to please read the Privacy Policy carefully. By accessing the services provided by the Site you agree to the collection and use of your data by SubNub Technologies Pvt. Ltd. in the manner provided in this Privacy Policy.
                         </div>
                     </ContentSection>
                 </Container>
