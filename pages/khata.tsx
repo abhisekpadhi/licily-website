@@ -53,7 +53,7 @@ const Privacy: NextPage = () => {
                     </SectionTitle>
                     <ContentSection>
                         <Title>
-                            Licily customers can enjoy interest-free purchase credit starting from ₹4500 upto ₹1,00,000 for their orders on Licily app & website.
+                            Licily customers can enjoy interest-free purchase credit starting from ₹4500 upto ₹1,00,000 & upto 45 days, for their orders on Licily app & website.
                             <br />
                         </Title>
                         <div>
