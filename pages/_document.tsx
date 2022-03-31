@@ -17,6 +17,7 @@ export default class MyDocument extends Document {
                         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,800;1,400;1,600&family=Nunito:wght@400;600;800&display=swap"
                         rel="stylesheet"
                     />
+                    <meta name="facebook-domain-verification" content="ns3sn9192yv3wiyjhyzh65ja2hxskw" />
                 </Head>
                 <body>
                     <Main />
